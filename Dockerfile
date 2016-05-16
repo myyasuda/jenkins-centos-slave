@@ -2,7 +2,7 @@ FROM centos:centos7
 
 MAINTAINER "myasuda" <myasuda@uchida.co.jp>
 
-RUN rpm -Uhv --force https://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+RUN yum install -y epel-release.noarch
 
 # install packages
 RUN yum update -y
